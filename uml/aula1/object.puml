@@ -1,0 +1,46 @@
+@startuml
+object Robertao_PernaDura {
+    jogador = "Bruno"
+    nome = "Robertão PernaDura"
+    classe = "Bárbaro"
+    level = 3
+    vida = 100
+    magia = 0
+    forca = 15
+    inteligencia = 0
+    agilidade = 5
+    sorte = 0
+    habilidade_1 = "ataque_suicida()"
+    habilidade_2 = "modo_berserk()"
+}
+
+object Isa_Beladona {
+    jogador = "Isabela"
+    nome = "Isa Beladona da Ametista"
+    classe = "Bruxa"
+    level = 3
+    vida = 50
+    magia = 50
+    forca = 0
+    inteligencia = 10
+    agilidade = 5
+    sorte = 5
+    habilidade_1 = "bola_de_fogo()"
+    habilidade_2 = "cura_iii()"
+}
+
+object Joao_Paulada {
+    jogador = "Vitor"
+    nome = "João Paulada"
+    classe = "Guerreiro"
+    level = 3
+    vida = 80
+    magia = 20
+    forca = 6
+    inteligencia = 4
+    agilidade = 6
+    sorte = 4
+    habilidade_1 = "espadada()"
+    habilidade_2 = "proteção()"
+}
+@enduml

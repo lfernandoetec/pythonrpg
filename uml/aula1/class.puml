@@ -1,0 +1,16 @@
+@startuml
+class Personagem {
+    - jogador: str
+    - nome: str
+    - classe: str
+    - level: int
+    - vida: int
+    - magia: int
+    - forca: int
+    - inteligencia: int
+    - agilidade: int
+    - sorte: int
+    + habilidade_1(): void
+    + habilidade_2(): void
+}
+@enduml

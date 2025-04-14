@@ -1,0 +1,22 @@
+@startuml
+
+class Jogador {
+    - nome: str
+    - personagem: str
+    - classe: str
+    - level: int = 3
+    - vida: int = 0
+    - magia: int = 0
+    - forca: int = 0
+    - inteligencia: int = 0
+    - agilidade: int = 0
+    - sorte: int = 0
+
+    + __init__(nome: str, personagem: str, classe: str)
+    + ataque(): void
+    + especial(): void
+    + apresentar(): void
+    + provocar(inimigo: str): void
+}
+
+@enduml

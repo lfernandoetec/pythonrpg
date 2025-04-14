@@ -1,0 +1,35 @@
+@startuml
+
+class Jogador {
+    - nome: str
+    - personagem: str
+    - level: int
+    - vida: int
+    - magia: int
+    {static} + classe: str
+
+    + __init__(nome: str, personagem: str, vida: int, magia: int)
+    + atacar(): void
+    + especial(): void
+    + apresentar(): void
+    + provocar(inimigo: str): void
+}
+
+class Barbaro {
+    {static} + classe: str
+    + __init__(nome: str, personagem: str, vida: int)
+    + atacar(): void
+    + especial(): void
+}
+
+class Bruxa {
+    {static} + classe: str
+    + __init__(nome: str, personagem: str, vida: int)
+    + atacar(): void
+    + especial(): void
+}
+
+Jogador <|-- Barbaro
+Jogador <|-- Bruxa
+
+@enduml

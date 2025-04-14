@@ -1,0 +1,30 @@
+@startuml
+
+object bruno {
+    nome = "Bruno"
+    personagem = "Robertão PernaDura"
+    classe = "Barbaro"
+    level = 3
+    vida = 200
+    magia = 10
+}
+
+object isabela {
+    nome = "Isabela"
+    personagem = "Isa Beladona da Ametista"
+    classe = "Bruxa"
+    level = 3
+    vida = 50
+    magia = 50
+}
+
+object ana_laura {
+    nome = "Ana Laura"
+    personagem = "Ana da floresta dos Sabias"
+    classe = "Bruxa"
+    level = 3
+    vida = 40
+    magia = 50
+}
+
+@enduml
