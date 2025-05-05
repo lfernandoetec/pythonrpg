@@ -1,0 +1,43 @@
+@startuml
+
+' Definição de classes principais
+class Personagem {
+  -nome: str
+  -vida: int
+  -mana: int
+  -inventario: Inventario
+  -habilidades: List<Habilidade>
+}
+
+class Inventario {
+  -itens: List<Item>
+}
+
+class Item {
+  -nome: str
+  -tipo: str
+  -poder: int
+}
+
+class Habilidade {
+  -nome: str
+  -dano: int
+  -custo_mana: int
+}
+
+class Loja {
+  -itens_venda: List<Item>
+}
+
+class EngineCombate {
+  +executar_ataque(atacante: Personagem, alvo: Personagem)
+}
+
+' Relacionamentos
+Personagem *-- Inventario : composição
+Personagem o-- Habilidade : agregação
+Inventario o-- Item : agregação
+Loja o-- Item : agregação
+EngineCombate ..> Personagem : dependência
+
+@enduml
